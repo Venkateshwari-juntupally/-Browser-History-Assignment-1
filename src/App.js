@@ -142,7 +142,7 @@ class App extends Component {
               {newHistoryList.map(eachObject => (
                 <li
                   key={eachObject.id}
-                  uniqueId={eachObject.id}
+                  data-uniqueId={eachObject.id}
                   className="items-holder"
                 >
                   <p className="time">{eachObject.timeAccessed}</p>
@@ -159,7 +159,7 @@ class App extends Component {
                   </div>
                   <button
                     className="delete-button"
-                    testid="delete"
+                    data-testid="delete"
                     type="button"
                     onClick={() => this.FillFunction(eachObject.id)}
                   >
